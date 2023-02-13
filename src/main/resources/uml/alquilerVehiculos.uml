@@ -1586,7 +1586,7 @@
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_vG9MkKIfEe2FfJdvgWWwEg" name="alquiler" type="_psyC4KIfEe2FfJdvgWWwEg"/>
             </ownedOperation>
             <ownedOperation xmi:type="uml:Operation" xmi:id="_4nq8cKOhEe2ZB8FyM7Ufdg" name="devolver" method="_17Ih4KOaEe2ZB8FyM7Ufdg">
-              <ownedParameter xmi:type="uml:Parameter" xmi:id="_4nq8caOhEe2ZB8FyM7Ufdg" name="cliente" type="_nFFA0KIfEe2FfJdvgWWwEg" effect="read"/>
+              <ownedParameter xmi:type="uml:Parameter" xmi:id="_4nq8caOhEe2ZB8FyM7Ufdg" name="alquiler" type="_psyC4KIfEe2FfJdvgWWwEg" effect="read"/>
               <ownedParameter xmi:type="uml:Parameter" xmi:id="_4nq8cqOhEe2ZB8FyM7Ufdg" name="fechaDevolucion" type="_ptEWwKIfEe2FfJdvgWWwEg" effect="read"/>
             </ownedOperation>
           </packagedElement>

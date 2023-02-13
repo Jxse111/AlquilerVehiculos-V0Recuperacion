@@ -20,11 +20,11 @@ import org.junit.jupiter.api.Test;
 
 public class TurismosTest {
 
-	private static final String MENSAJE_ERROR_INSERTAR_CLIENTE_NULO = "ERROR: No se puede insertar un turismo nulo.";
-	private static final String MENSAJE_ERROR_BORRAR_CLIENTE_NULO = "ERROR: No se puede borrar un turismo nulo.";
-	private static final String MENSAJE_ERROR_BUSCAR_CLIENTE_NULO = "ERROR: No se puede buscar un turismo nulo.";
-	private static final String MENSAJE_ERROR_CLIENTE_EXISTE = "ERROR: Ya existe un turismo con esa matrícula.";
-	private static final String MENSAJE_ERROR_CLIENTE_BORRAR_NO_EXISTE = "ERROR: No existe ningún turismo con esa matrícula.";
+	private static final String MENSAJE_ERROR_INSERTAR_TURISMO_NULO = "ERROR: No se puede insertar un turismo nulo.";
+	private static final String MENSAJE_ERROR_BORRAR_TURISMO_NULO = "ERROR: No se puede borrar un turismo nulo.";
+	private static final String MENSAJE_ERROR_BUSCAR_TURISMO_NULO = "ERROR: No se puede buscar un turismo nulo.";
+	private static final String MENSAJE_ERROR_TURISMO_EXISTE = "ERROR: Ya existe un turismo con esa matrícula.";
+	private static final String MENSAJE_ERROR_TURISMO_BORRAR_NO_EXISTE = "ERROR: No existe ningún turismo con esa matrícula.";
 
 	private static Turismo turismo1;
 	private static Turismo turismo2;
@@ -72,14 +72,14 @@ public class TurismosTest {
 	@Test
 	void insertarTurismoNuloLanzaExcepcion() {
 		NullPointerException npe = assertThrows(NullPointerException.class, () -> turismos.insertar(null));
-		assertEquals(MENSAJE_ERROR_INSERTAR_CLIENTE_NULO, npe.getMessage());
+		assertEquals(MENSAJE_ERROR_INSERTAR_TURISMO_NULO, npe.getMessage());
 	}
 	
 	@Test
 	void insertarTurismoRepetidoLanzaExcepcion() {
 		assertDoesNotThrow(() -> turismos.insertar(turismo1));
 		OperationNotSupportedException onse = assertThrows(OperationNotSupportedException.class, () -> turismos.insertar(turismo1));
-		assertEquals(MENSAJE_ERROR_CLIENTE_EXISTE, onse.getMessage());
+		assertEquals(MENSAJE_ERROR_TURISMO_EXISTE, onse.getMessage());
 	}
 	
 	@Test
@@ -94,7 +94,7 @@ public class TurismosTest {
 	void borrarTurismoNoExistenteLanzaExcepcion() {
 		assertDoesNotThrow(() -> turismos.insertar(turismo1));
 		OperationNotSupportedException onse = assertThrows(OperationNotSupportedException.class, () -> turismos.borrar(turismo2));
-		assertEquals(MENSAJE_ERROR_CLIENTE_BORRAR_NO_EXISTE, onse.getMessage());
+		assertEquals(MENSAJE_ERROR_TURISMO_BORRAR_NO_EXISTE, onse.getMessage());
 		assertEquals(1, turismos.getCantidad());
 	}
 
@@ -102,7 +102,7 @@ public class TurismosTest {
 	void borrarTurismoNuloLanzaExcepcion() {
 		assertDoesNotThrow(() -> turismos.insertar(turismo1));
 		NullPointerException npe = assertThrows(NullPointerException.class, () -> turismos.borrar(null));
-		assertEquals(MENSAJE_ERROR_BORRAR_CLIENTE_NULO, npe.getMessage());
+		assertEquals(MENSAJE_ERROR_BORRAR_TURISMO_NULO, npe.getMessage());
 		assertEquals(1, turismos.getCantidad());
 	}
 	
@@ -122,7 +122,7 @@ public class TurismosTest {
 	void buscarTurismoNuloLanzaExcepcion() {
 		assertDoesNotThrow(() -> turismos.insertar(turismo1));
 		NullPointerException npe = assertThrows(NullPointerException.class, () -> turismos.buscar(null));
-		assertEquals(MENSAJE_ERROR_BUSCAR_CLIENTE_NULO, npe.getMessage());
+		assertEquals(MENSAJE_ERROR_BUSCAR_TURISMO_NULO, npe.getMessage());
 	}
 
 }
