@@ -131,7 +131,7 @@ Para ello te muestro un diagrama de clases para el mismo y poco a poco te iré e
 #### Controlador
 1. Crea la clase `Controlador` que será la encargada de hacer de intermediario entre la vista y el modelo.
 2. Crea los atributos adecuados.
-3. Crea el constructor con parámetros que comprobará que no son nulos y los asignará a los atributos. Además debe llamar al método `setVista` de la vista con una instancia suya.
+3. Crea el constructor con parámetros que comprobará que no son nulos y los asignará a los atributos. Además debe llamar al método `setControlador` de la vista con una instancia suya.
 4. Crea los métodos `comenzar` y `terminar`, que llamarán a los correspondientes métodos en el modelo y en la vista.
 5. Crea los demás métodos que simplemente harán una llamada al correspondiente método del modelo.
 6. Realiza un **commit**.
