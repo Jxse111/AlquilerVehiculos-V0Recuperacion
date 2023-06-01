@@ -31,7 +31,7 @@ public class Turismo {
 			return marca;
 		}
 		public void setMarca(String marca) throws IllegalArgumentException {
-			if (marca == null) {
+			if (marca.matches(ER_MARCA)) {
 				throw new NullPointerException("ERROR: la marca no puede ser nula.");
 			}
 		}
