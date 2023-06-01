@@ -1,9 +1,7 @@
-
+package org.iesalandalus.programacion.alquilervehiculos.vista;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.Iterator;
-
 import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Alquiler;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Turismo;
@@ -12,10 +10,6 @@ import org.iesalandalus.programacion.utilidades.Entrada;
 public class Consola {
 	private static final String PATRON_FECHA = "dd/MM/yyyy";
 	private static final DateTimeFormatter FORMATO_FECHA = DateTimeFormatter.ofPattern(PATRON_FECHA);
-
-	private void Consola() {
-
-	}
 
 	public static void mostrarCabecera(String mensaje) {
 		System.out.println(mensaje);
