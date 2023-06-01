@@ -1,6 +1,6 @@
 # Tarea: Alquiler de vehículos
 ## Profesor: José Ramón Jiménez Reyes
-## Alumno:
+## Alumno:José Martínez Estrada
 
 La tarea va a consistir en modelar la gestión de un negocio de alquiler de vehículos. Nuestro nuevo cliente se dedica a alquilar vehículos a sus clientes. En este **primer spring**, el cliente nos pide que sólo contemplemos el alquiler de **turismos**, de los que guarda su **marca**, **modelo**, **cilindrada** y **matrícula**. Para los **clientes** guarda información sobre su **nombre**, **DNI** y **teléfono**.
 
