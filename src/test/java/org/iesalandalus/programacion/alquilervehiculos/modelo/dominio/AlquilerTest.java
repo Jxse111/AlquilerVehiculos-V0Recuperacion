@@ -14,9 +14,9 @@ import java.time.LocalDate;
 
 import javax.naming.OperationNotSupportedException;
 
-import org.iesalandalus.programacion.alquilervehiculos.dominio.Alquiler;
-import org.iesalandalus.programacion.alquilervehiculos.dominio.Cliente;
-import org.iesalandalus.programacion.alquilervehiculos.dominio.Turismo;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Alquiler;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Turismo;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
