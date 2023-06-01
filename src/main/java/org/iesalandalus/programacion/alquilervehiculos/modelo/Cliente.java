@@ -1,7 +1,6 @@
 package org.iesalandalus.programacion.alquilervehiculos.modelo;
 
 import java.util.Objects;
-import java.util.regex.Pattern;
 
 public class Cliente {
 	private static final String ER_NOMBRE = "\"[A-ZÁÉÍÓÚÑ][a-záéíóúñ] \s [A-ZÁÉÍÓÚÑ][a-záéíóúñ]*\"";
