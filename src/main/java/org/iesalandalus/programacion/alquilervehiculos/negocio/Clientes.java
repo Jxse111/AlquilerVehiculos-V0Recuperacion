@@ -8,6 +8,7 @@ import javax.naming.OperationNotSupportedException;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.Cliente;
 
 public class Clientes {
+	List<Cliente> coleccionClientes;
 	public Clientes() {
 		coleccionClientes = new ArrayList<>();
 	}
