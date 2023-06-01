@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.alquilervehiculos.modelo.dominio;
+package org.iesalandalus.programacion.alquilervehiculos.dominio;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

@@ -1,10 +1,10 @@
-package org.iesalandalus.programacion.alquilervehiculos.modelo.negocio;
+package org.iesalandalus.programacion.alquilervehiculos.negocio;
 	import java.util.ArrayList;
 	import java.util.List;
 
 	import javax.naming.OperationNotSupportedException;
 
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Turismo;
+import org.iesalandalus.programacion.alquilervehiculos.dominio.Turismo;
 
 	public class Turismos {
 
