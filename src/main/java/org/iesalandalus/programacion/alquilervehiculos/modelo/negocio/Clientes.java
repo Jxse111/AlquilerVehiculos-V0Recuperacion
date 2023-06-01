@@ -1,11 +1,11 @@
-package org.iesalandalus.programacion.alquilervehiculos.negocio;
+package org.iesalandalus.programacion.alquilervehiculos.modelo.negocio;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.naming.OperationNotSupportedException;
 
-import org.iesalandalus.programacion.alquilervehiculos.modelo.Cliente;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
 
 public class Clientes {
 	List<Cliente> coleccionClientes;

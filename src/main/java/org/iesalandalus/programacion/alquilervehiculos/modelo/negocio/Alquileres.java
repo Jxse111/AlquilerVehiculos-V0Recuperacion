@@ -1,13 +1,13 @@
-package org.iesalandalus.programacion.alquilervehiculos.negocio;
+package org.iesalandalus.programacion.alquilervehiculos.modelo.negocio;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.naming.OperationNotSupportedException;
 
-import org.iesalandalus.programacion.alquilervehiculos.modelo.Alquiler;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.Cliente;
-import org.iesalandalus.programacion.alquilervehiculos.modelo.Turismo;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Alquiler;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Turismo;
 
 public class Alquileres {
 
