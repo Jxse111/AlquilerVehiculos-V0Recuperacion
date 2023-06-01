@@ -74,10 +74,6 @@ public class Alquiler {
 		this.fechaDevolucion = fechaDevolucion;
 	}
 
-	public static int getPrecioDia() {
-		return PRECIO_DIA;
-	}
-
 	public void devolver(LocalDate fechaDevolucion) throws OperationNotSupportedException {
 		if (this.fechaDevolucion != null) {
 			throw new OperationNotSupportedException("ERROR: La devolución ya estaba registrada.");
