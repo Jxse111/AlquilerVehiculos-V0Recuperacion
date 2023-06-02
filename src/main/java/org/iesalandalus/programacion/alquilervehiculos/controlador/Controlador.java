@@ -70,8 +70,8 @@ public class Controlador {
 		modelo.modificar(cliente, nombre, telefono);
 	}
 
-	public void devolver(Alquiler alquiler, LocalDate fechaDevolucion) throws OperationNotSupportedException {
-		modelo.devolver(alquiler, fechaDevolucion);
+	public void devolver(Cliente cliente, LocalDate fechaDevolucion) throws OperationNotSupportedException {
+		modelo.devolver(cliente, fechaDevolucion);
 	}
 
 	public void borrar(Cliente cliente) throws OperationNotSupportedException {
